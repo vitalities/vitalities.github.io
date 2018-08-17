@@ -1,1 +1,1 @@
-# vitalities.github.io
+# Vitalities pages
