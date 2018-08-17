@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/adjustment/adjustment.css">
+  <link rel="stylesheet" href="css/font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/styles/main.css">
+  <link rel="stylesheet" href="css/styles/contact.css">
+  <link rel="stylesheet" href="css/responsive/responsive.css">
+  <title>BlogLab</title>
+</head>
+<body>
+  <!-- Start Sidebar Menu -->
+  <div class="menu-overlay" id="menu-content">
+    <div class="menu-close">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="menu-list">
+      <ul>
+        <li class="menu-list-item"><a href="index.html">Home</a></li>
+        <div class="menu-list-dropdown-bar">
+          <li class="menu-list-dropdown-title">Blog<i class="fas fa-angle-down menu-arrow"></i></li>
+          <div class="menu-list-dropdown" hidden>
+            <li class="menu-list-dropdown-item"><a href="blog.html">Blog main</a></li>
+            <li class="menu-list-dropdown-item"><a href="blog-full-width.html">Blog full witdh</a></li>
+            <li class="menu-list-dropdown-item"><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+            <li class="menu-list-dropdown-item"><a href="blog-detail.html">Blog detail</a></li>
+          </div>
+        </div>
+        <li class="menu-list-item"><a href="contact.html">Contact</a></li>
+        <li class="menu-list-item"><a href="about.html">About</a></li>
+        <div class="menu-list-dropdown-bar">
+          <li class="menu-list-dropdown-title">Portfolio<i class="fas fa-angle-down menu-arrow"></i></li>
+          <div class="menu-list-dropdown" hidden>
+            <li class="menu-list-dropdown-item"><a href="portfolio.html">Portfolio main</a></li>
+            <li class="menu-list-dropdown-item"><a href="portfolio-detail.html">Portfolio detail</a></li>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <!-- Start Header -->
+  <header>
+    <div class="header-top">
+      <div class="header-contacts">
+        <div class="header-contacts-mail">
+          <a href="mailto:qwerty@mail.com"><i class="fas fa-envelope"></i> qwerty@mail.com</a>
+        </div>
+        <div class="header-contacts-phone">
+          <a href="tel:123345678900"><i class="fas fa-phone"></i> +12345678900</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-middle">
+      <div class="header-logo-bar">
+        <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+      </div>
+    </div>
+    <div class="header-pagename">
+      <div class="header-pagename-bar">
+        <a href="index.html" class="pagename">Home</a>
+      </div>
+      <div class="header-pagename-bar-this">
+        <p class="pagename"><b>Contact</b></p>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="header-menu-bar" id="menu-bar">
+        <a href="#"><i class="fas fa-bars"></i></a>
+      </div>
+      <form role="search" class="header-search-bar">
+          <div class="header-search">
+            <input id="searchfield" type="search" name="search" placeholder="Search">
+            <button> <i class="fas fa-search search-symbol"></i></button>
+          </div>
+      </form>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- Start Main content -->
+  <div id="main-content">
+    <div class="contact-bar">
+      <div class="contact-title">
+        <h3>Contact</h3>
+      </div>
+      <div class="contact-content">
+        <div class="contact-list">
+          <div class="item">
+            <div class="item-title"><i class="fas fa-envelope fa-2x"></i><h5>Email</h5></div>
+            <div class="item-description"><h5>bloglab@gmail.com</h5></div>
+          </div>
+          <div class="item">
+            <div class="item-title"><i class="fas fa-map fa-2x"></i><h5>Address</h5></div>
+            <div class="item-description"><h5>Main street 123, New York</h5></div>
+          </div>
+          <div class="item">
+            <div class="item-title"><i class="fas fa-phone fa-2x"></i><h5>Phone</h5></div>
+            <div class="item-description"><h5>+1 2345678910</h5></div>
+          </div>
+        <div class="contact-bottom">
+          <div class="weight-cover">
+            <div class="contact-show-feedback">
+              <div class="contact-show-feedback-title">
+                <h4>Feedback</h4>
+              </div>
+            </div>
+          </div>
+          <div class="weight-cover">
+            <div class="contact-show-map">
+              <div class="contact-show-map-title">
+                <h4>Map</h4>
+              </div>
+            </div>
+          </div>
+          <div class="weight-cover">
+            <div class="contact-map" hidden>
+              <div class="contact-map-title">
+                <h4>Map</h4>
+              </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d273807.8205527775!2d-74.10747143179137!3d40.69208598299209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sua!4v1532949981850" width="640" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="contact-feedback-bar">
+            <form id="contact-feedback" class="contact-feedback" action="contact.html" method="post">
+              <div class="contact-feedback-title">
+                <h4>Feedback</h4>
+              </div>
+              <div class="cover">
+                <input class="contact-feedback-name" form="contact-feedback" type="text" name="contact-feedback-name" placeholder="Enter your name..." title="Enter your name" maxlength="36" autocomplete="off" required>
+                <input form="contact-feedback" type="email" name="contact-feedback-email" placeholder="Enter your email..." title="Enter your email" maxlength="50" autocomplete="off" required>
+              </div>
+              <input class="contact-feedback-subject" form="contact-feedback" type="text" name="contact-feedback-subject" placeholder="Enter your subject..." title="Enter your subject" autocomplete="off" maxlength="100">
+              <textarea form="contact-feedback" name="contact-feedback-text" rows="8" cols="80" maxlength="1000" placeholder="Enter your text..." title="Enter your text" required></textarea>
+              <div class="contact-feedback-submit-button">
+                <button form="contact-feedback" type="submit" name="contact-feedback-submit-button">Send message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Main content -->
+  <!-- Start Footer -->
+  <footer>
+    <div class="footer-title">
+      <h1>BlogLab</h1>
+    </div>
+    <div class="footer-copyright">
+      &copy; 2018 BlogLab. Designed by vitalities
+    </div>
+  </footer>
+  <!-- End Footer -->
+  <!-- Start Back To Top -->
+  <a href="#" id="back-to-top" hidden><i class="fas fa-chevron-up"></i></a>
+  <!-- End Back To Top -->
+</body>
+<!-- Scripts -->
+<!-- jQuery -->
+<script src="js/plugins/jquery-3.3.1.min.js" charset="utf-8"></script>
+<!-- Animate -->
+<script src="js/scripts/animate.js" charset="utf-8"></script>
+<script src="js/scripts/contact.js" charset="utf-8"></script>
+<!-- Responsive -->
+<script src="js/scripts/responsive.js" charset="utf-8"></script>
+</html>
