@@ -1,11 +1,11 @@
 var isPhone = function(yes, no) {
-  if (document.documentElement.clientWidth <= 768) {
+  if ($(window).width() <= 768) {
     return yes;
   } else {
     return no;
   }
 }
-if (document.documentElement.clientWidth <= 768) {$('.blog-share-menu').height(0)}
+if ($(window).width() <= 768) {$('.blog-share-menu').height(0)}
 $(document).ready(function() {
   // Start Sidebar Menu Animation
   var showSidebarMenu = function() {
@@ -49,43 +49,51 @@ $(document).ready(function() {
   // End Sidebar Menu Animation
   // Start Blog Share Menu Animation
   $('.blog-share').click(function() {
+    var
+      sibBlogShareMenu = $(this).parent().parent().parent().siblings().find('.blog-share-menu');
+      sibTriangle = $(this).parent().parent().parent().siblings().find('.triangle');
+      blogShareMenu = $(this).parent().parent().parent().find('.blog-share-menu');
+      triangle = $(this).parent().parent().parent().find('.triangle');
+      blogShareMenuBar = $(this).parent().parent().parent().find('.blog-share-menu-bar');
+      blogShareHidden = $(this).parent().parent().parent().find('.blog-share-hidden');
+      sibBlogShareShown = $(this).parent().parent().parent().siblings().find('.blog-share-shown');
     if ($(this).hasClass('blog-share-hidden')) {
-      if (document.documentElement.clientWidth <= 768) {
-        $(this).parent().parent().parent().siblings().find('.blog-share-menu').stop().css('opacity',0)
-        $(this).parent().parent().parent().siblings().find('.triangle').stop().css('opacity',0)
-        $(this).parent().parent().parent().siblings().find('.blog-share-menu').css('z-index','-1000')
-        $(this).parent().parent().parent().siblings().find('.triangle').css('z-index','-1000')
-        $(this).parent().parent().parent().siblings().find('.blog-share-shown').removeClass('blog-share-shown').addClass('blog-share-hidden')
-        $(this).parent().parent().parent().find('.blog-share-menu').css('z-index','1000')
-        $(this).parent().parent().parent().find('.blog-share-menu').stop().css('height','100%')
-        $(this).parent().parent().parent().find('.blog-share-menu-bar').css('height','auto')
-        $(this).parent().parent().parent().find('.blog-share-menu').css('opacity','1')
+      if ($(window).width() <= 768) {
+        sibBlogShareMenu.stop().css('opacity',0)
+        triangle.stop().css('opacity',0)
+        sibBlogShareMenu.find('.blog-share-menu').css('z-index','-1000')
+        sibTriangle.css('z-index','-1000')
+        sibBlogShareShown.removeClass('blog-share-shown').addClass('blog-share-hidden')
+        blogShareMenu.css('z-index','1000')
+        blogShareMenu.stop().css('height','100%')
+        blogShareMenuBar.css('height','auto')
+        blogShareMenu.css('opacity','1')
         $(this).parent().parent().css('border-radius','10px 10px 0px 0px')
-        $(this).parent().parent().parent().find('.blog-share-hidden').removeClass('blog-share-hidden').addClass('blog-share-shown')
+        blogShareHidden.removeClass('blog-share-hidden').addClass('blog-share-shown')
       } else {
-        $(this).parent().parent().parent().siblings().find('.blog-share-menu').stop().animate({opacity: 0},300)
-        $(this).parent().parent().parent().siblings().find('.triangle').stop().animate({opacity: 0},50)
-        setTimeout(function(){$(this).parent().parent().parent().siblings().find('.blog-share-menu').css('z-index','-1000')},300)
-        setTimeout(function(){$(this).parent().parent().parent().siblings().find('.triangle').css('z-index','-1000')},300)
-        $(this).parent().parent().parent().siblings().find('.blog-share-shown').removeClass('blog-share-shown').addClass('blog-share-hidden')
-        $(this).parent().parent().parent().find('.blog-share-menu').css('z-index','1000')
-        $(this).parent().parent().parent().find('.triangle').css('z-index','999')
-        $(this).parent().parent().parent().find('.blog-share-menu').stop().animate({opacity: 1},200)
-        $(this).parent().parent().parent().find('.triangle').stop().animate({opacity: 1},400)
-        $(this).parent().parent().parent().find('.blog-share-hidden').removeClass('blog-share-hidden').addClass('blog-share-shown')
+        sibBlogShareMenu.stop().animate({opacity: 0},300)
+        sibTriangle.stop().animate({opacity: 0},50)
+        setTimeout(function(){sibBlogShareMenu.css('z-index','-1000')},300)
+        setTimeout(function(){sibTriangle.css('z-index','-1000')},300)
+        sibBlogShareShown.removeClass('blog-share-shown').addClass('blog-share-hidden')
+        blogShareMenu.css('z-index','1000')
+        triangle.css('z-index','999')
+        blogShareMenu.stop().animate({opacity: 1},200)
+        triangle.stop().animate({opacity: 1},400)
+        blogShareHidden.removeClass('blog-share-hidden').addClass('blog-share-shown')
       }
     } else {
-      if (document.documentElement.clientWidth <= 768) {
-        $(this).parent().parent().parent().find('.blog-share-menu').stop().css('height','0')
-        $(this).parent().parent().parent().find('.blog-share-menu').stop().css('opacity',0)
-        $(this).parent().parent().parent().find('.triangle').stop().css('opacity',0)
+      if ($(window).width() <= 768) {
+        blogShareMenu.stop().css('height','0')
+        blogShareMenu.stop().css('opacity',0)
+        triangle.stop().css('opacity',0)
         $('.blog-share-menu').css('z-index','-1000')
         $('.triangle').css('z-index','-1000')
         $(this).parent().parent().css('border-radius','10px 10px 15px 15px')
         $(this).parent().parent().parent().find('.blog-share-shown').removeClass('blog-share-shown').addClass('blog-share-hidden')
       } else {
-        $(this).parent().parent().parent().find('.blog-share-menu').stop().animate({opacity: 0},300)
-        $(this).parent().parent().parent().find('.triangle').stop().animate({opacity: 0},50)
+        blogShareMenu.stop().animate({opacity: 0},300)
+        triangle.stop().animate({opacity: 0},50)
         setTimeout(function(){$('.blog-share-menu').css('z-index','-1000')},300)
         setTimeout(function(){$('.triangle').css('z-index','-1000')},300)
         $(this).parent().parent().parent().find('.blog-share-shown').removeClass('blog-share-shown').addClass('blog-share-hidden')
@@ -93,7 +101,7 @@ $(document).ready(function() {
     }
   })
   $(window).click(function() {
-    if (document.documentElement.clientWidth <= 768) {
+    if ($(window).width() <= 768) {
       $('.blog-block').css('border-radius','10px 10px 15px 15px')
       $('.blog-share-menu').css('height','0')
       $('.blog-share-menu').stop().css('opacity',0)
@@ -151,24 +159,16 @@ $(document).ready(function() {
     thisBlogTagsButton = $(this);
     $('.blog-tags-button h4').mouseenter(function(){
       var thisBlogTagsButtonH4 = $(this);
-      if (thisBlogTagsButton.hasClass('blog-tags-hidden')) {
-        thisBlogTagsButtonH4.css('background', '#1c1c1c');
-      }
-      if (!thisBlogTagsButton.hasClass('blog-tags-hidden')) {
-        thisBlogTagsButtonH4.css('background', '#3c3c3c');
-      }
+      if (thisBlogTagsButton.hasClass('blog-tags-hidden')) {thisBlogTagsButtonH4.css('background', '#1c1c1c')}
+      if (!thisBlogTagsButton.hasClass('blog-tags-hidden')) {thisBlogTagsButtonH4.css('background', '#3c3c3c')}
     })
     $('.blog-tags-button h4').mouseleave(function(){
       var thisBlogTagsButtonH4 = $(this);
-      if (thisBlogTagsButton.hasClass('blog-tags-hidden')) {
-        thisBlogTagsButtonH4.css('background', 'rgba(10,10,10,0.5)');
-      }
-      if (!thisBlogTagsButton.hasClass('blog-tags-hidden')) {
-        thisBlogTagsButtonH4.css('background', '#2c2c2c');
-      }
+      if (thisBlogTagsButton.hasClass('blog-tags-hidden')) {thisBlogTagsButtonH4.css('background', 'rgba(10,10,10,0.5)')}
+      if (!thisBlogTagsButton.hasClass('blog-tags-hidden')) {thisBlogTagsButtonH4.css('background', '#2c2c2c')}
     })
     if ($(this).hasClass('blog-tags-hidden')) {
-      if (document.documentElement.clientWidth <= 768) {
+      if ($(window).width() <= 768) {
         blogTags.stop().css('height','100%')
       } else {
         blogTags.stop().animate({height: '37px'}, 400)
@@ -178,12 +178,10 @@ $(document).ready(function() {
       $(this).removeClass('blog-tags-hidden');
       $('.blog-block').mouseenter(function(){$(this).find('.blog-tags-button').stop().animate({opacity: 1}, 200);})
       $('.blog-block').mouseleave(function(){
-        if ($(this).find('.blog-tags-button').hasClass('blog-tags-hidden')) {
-          $(this).find('.blog-tags-button').stop().animate({opacity: 0}, 300);
-        }
+        if ($(this).find('.blog-tags-button').hasClass('blog-tags-hidden')) {$(this).find('.blog-tags-button').stop().animate({opacity: 0}, 300)}
       })
     } else {
-      if (document.documentElement.clientWidth <= 768) {
+      if ($(window).width() <= 768) {
         blogTags.stop().css('height','0');
         blogTags.css('border','none');
       } else {
@@ -230,14 +228,14 @@ $(document).ready(function() {
   // Start About Me Animation
   $('.about-me-content-black p').text($('.about-me-content p').text());
   $('.about-me-bar').hover(function() {
-    if (document.documentElement.clientWidth <= 768) {
+    if ($(window).width() <= 768) {
       return
     } else {
       var contentHeight = $('.about-me-content').height() * 0.6;
       $('.about-me-content-black-cover').css('height', contentHeight).css('border-radius', '0px').css('background-color', '#3c3c3c');
     }
   },function() {
-    if (document.documentElement.clientWidth <= 768) {
+    if ($(window).width() <= 768) {
       return
     } else {
       $('.about-me-content-black-cover').css('height', '0px').css('border-radius', '10px').css('background-color', '#4c4c4c');
