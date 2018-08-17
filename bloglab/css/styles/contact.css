@@ -217,3 +217,12 @@ textarea{
   text-align: center;
   width: 150px;
 }
+.item h5{
+  color: #ccc;
+}
+.item a{
+  color: #ccc;
+}
+.item:hover h5, .item:hover a{
+  color: #f9f9f9;
+}
