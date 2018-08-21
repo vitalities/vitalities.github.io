@@ -110,53 +110,53 @@ button:hover{
 
 @font-face {
     font-family: 'lato';
-    src: url('../fonts/Lato/lato.regular.ttf');
+    src: url('../../fonts/Lato/lato.regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
   font-family: 'lato-light';
-  src: url('../fonts/Lato/lato.light.ttf');
+  src: url('../../fonts/Lato/lato.light.ttf');
 }
 @font-face {
   font-family: 'lato-italic';
-  src: url('../fonts/Lato/lato.italic.ttf');
+  src: url('../../fonts/Lato/lato.italic.ttf');
 }
 @font-face {
   font-family: 'gnuolane';
-  src: url('../fonts/Gnuolane/gnuolane-free.regular.ttf');
+  src: url('../../fonts/Gnuolane/gnuolane-free.regular.ttf');
 }
 @font-face {
   font-family: 'hind-light';
-  src: url('../fonts/Hind/Hind-Light.ttf');
+  src: url('../../fonts/Hind/Hind-Light.ttf');
 }
 @font-face {
   font-family: 'hind';
-  src: url('../fonts/Hind/Hind-Regular.ttf');
+  src: url('../../fonts/Hind/Hind-Regular.ttf');
 }
 @font-face {
   font-family: 'hind-bold';
-  src: url('../fonts/Hind/Hind-Bold.ttf');
+  src: url('../../fonts/Hind/Hind-Bold.ttf');
 }
 @font-face {
   font-family: 'fira-sans';
-  src: url('../fonts/Fira_Sans/FiraSans-Regular.ttf');
+  src: url('../../fonts/Fira_Sans/FiraSans-Regular.ttf');
 }
 @font-face {
   font-family: 'fira-sans-italic';
-  src: url('../fonts/Fira_Sans/FiraSans-Italic.ttf');
+  src: url('../../fonts/Fira_Sans/FiraSans-Italic.ttf');
 }
 @font-face {
   font-family: 'fira-sans-bold';
-  src: url('../fonts/Fira_Sans/FiraSans-Bold.ttf');
+  src: url('../../fonts/Fira_Sans/FiraSans-Bold.ttf');
 }
 @font-face {
   font-family: 'oxygen';
-  src: url('../fonts/Oxygen/Oxygen-Regular.ttf');
+  src: url('../../fonts/Oxygen/Oxygen-Regular.ttf');
 }
 @font-face {
   font-family: 'oxygen-bold';
-  src: url('../fonts/Oxygen/Oxygen-Bold.ttf');
+  src: url('../../fonts/Oxygen/Oxygen-Bold.ttf');
 }
 body{
   font-family: lato, tahoma, arial;
