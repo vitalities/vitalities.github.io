@@ -123,8 +123,8 @@ button:hover{
   src: url('../../fonts/Lato/lato.italic.ttf');
 }
 @font-face {
-  font-family: 'gnuolane';
-  src: url('../../fonts/Gnuolane/gnuolane-free.regular.ttf');
+  font-family: 'oswald';
+  src: url('../../fonts/Oswald/Oswald-Regular.ttf');
 }
 @font-face {
   font-family: 'hind-light';
