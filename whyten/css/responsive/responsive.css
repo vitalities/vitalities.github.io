@@ -18,7 +18,8 @@
     width: 90%;
   }
 }
-@media screen and (max-width: 1285px) {
+@media screen and (max-width: 1305px) {
+  /* 1285px */
   #back-to-top{
     left: 94%;
   }
@@ -60,7 +61,7 @@
     bottom: 9px;
     transition: 1s;
     border-radius: 10px;
-    right: 28px;
+    /* right: 28px; */
   }
   .about-me-bar:hover .about-me-content-black-cover{
     height: 200px;
@@ -436,9 +437,19 @@
     bottom: 0%;
     opacity: 1;
   }
-  .popular-post-title{
+  /* .popular-post-title{
     top: 55.5%;
     opacity: 1;
+  } */
+.popular-post-title{
+    bottom: 0%;
+    opacity: 1;
+    background: rgba(0,0,0,0.5);
+  }
+.popular-post-other{
+    top: 35%;
+    opacity: 1;
+    background: rgba(0,0,0,0.5);
   }
   .newsletter-content input{
     width: 95%;

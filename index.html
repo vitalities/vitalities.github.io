@@ -3,109 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ViTaLiTieS</title>
 </head>
 <body>
-  <style media="screen">
-    body, html{
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      font-family: arial, tahoma;
-      background: #3c3c3c;
-    }
-    .head{
-      background: #2c2c2c;
-      width: 100%;
-      padding: 0 0 20px 0;
-      color: #f1f1f1;
-      text-align: center;
-      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
-    }
-    a{
-      color: #f5f5f5;
-      text-decoration: none;
-      transition: 0.1s;
-      outline: none;
-    }
-    a:hover{
-      color: #f9f9f9;
-    }
-    .head a{
-      display: inline-block;
-    }
-    .content{
-      text-align: center;
-    }
-    .item{
-      display: inline-block;
-      height: auto;
-      width: 300px;
-      margin: 30px 0px;
-      background: #1c1c1c;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: 0.2s;
-    }
-    .item:hover{
-      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    }
-    .image{
-      background: #f9f9f9;
-    }
-    .title h3{
-      font-size: 20px;
-    }
-    .head-links{
-      margin: 0;
-      padding: 0;
-    }
-    .head-link{
-      margin: 0px 10px;
-      padding: 10px;
-      border-radius: 10px;
-      background: #1c1c1c;
-      transition: all 0.5s;
-      border-bottom: 3px solid rgba(0, 0, 0, 0);
-      color: #f1f1f1;
-    }
-    .head-link:hover{
-      border-radius: 10px 10px 0 0;
-      border-color: #f1f1f1;
-      transition: all 0.2s;
-      color: #fff;
-    }
-    .themeforest:hover{
-      border-color: green;
-    }
-    .head-link h3{
-      margin: 0;
-      padding: 0;
-      font-size: 16px;
-    }
-    .head h1{
-      margin: 0;
-      padding: 20px 0px;
-    }
-    .header-cover{
-      -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-      -khtml-user-select: none; /* Konqueror HTML */
-      -moz-user-select: none; /* Firefox */
-      -ms-user-select: none; /* Internet Explorer/Edge */
-      user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
-    }
-  </style>
   <div class="head">
-    <div class="header-cover"><h1 align="center">ViTaLiTieS</h1></div>
-    <div class="head-links">
-      <a class="head-link" href="https://github.com/vitalities"><h3>GitHub</h3> </a>
-      <a class="head-link themeforest" href="https://themeforest.net/user/vitalities"><h3>ThemeForest</h3> </a>
+    <!-- <div class="header-cover"><h1 align="center">ViTaLiTieS</h1></div> -->
+    <div class="header-cover"><img align="center" src="vitalities_logo.png" alt="ViTaLiTieS" height="200px"></div>
+    <div class="header-description">
+      <p>Web Designer</p>
     </div>
   </div>
   <div class="content">
+  <div class="content-header">
+    <h2>Portfolio</h2>
+  </div>
   <a href="whyten/index.html">
     <div class="item">
         <div class="image">
@@ -117,5 +30,31 @@
     </div>
   </a>
   </div>
+  <div class="footer">
+    <div class="footer-title">
+      <h3>Links</h3>
+    </div>
+    <div class="head-links">
+      <a class="head-link" href="https://github.com/vitalities"><h3>GitHub</h3> </a>
+      <a class="head-link themeforest" href="https://themeforest.net/user/vitalities"><h3>ThemeForest</h3> </a>
+      <a class="head-link instagram" href="https://instagram.com/vitalitiesm"><h3>Instagram</h3> </a>
+    </div>
+  </div>
 </body>
+<script src="jquery-3.3.1.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.header-description p').css('bottom','0px');
+    $('.header-description').css({
+      'margin-bottom':'10px',
+      'bottom': '0px',
+      'border-top': '2px solid rgba(248, 248, 248,255)'
+    });
+    $('.footer-title h3').css('top','0');
+    $('.footer-title').css({
+      'margin-bottom':'20px',
+      'border-bottom': '2px solid rgba(248, 248, 248,255)'
+    })
+  })
+</script>
 </html>

@@ -30,8 +30,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	background-color: #fff;
-	background-image: url('../../img/a-pattern-lightgray.png');
-	/* background-attachment: fixed; */
+	background-image: url('../../img/background/a-pattern-lightgray.png');
+	background-attachment: fixed;
 }
 ol, ul {
 	list-style: none;

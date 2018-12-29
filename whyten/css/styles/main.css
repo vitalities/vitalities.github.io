@@ -875,6 +875,9 @@ a.page-navigation-item-current{
   position: relative;
   right: 2.5px;
 }
+.popular-post-bar b, .popular-post-title{
+  font-family: hind-bold;
+}
 .popular-post-content{
   padding: 0px 20px;
 }
@@ -908,7 +911,6 @@ a.page-navigation-item-current{
   position: relative;
   background: rgba(33,33,33,0.9);
   color: #f9f9f9;
-  font-weight: bold;
   width: 100%;
   overflow: hidden;
   transition: 0.3s;
@@ -921,6 +923,8 @@ a.page-navigation-item-current{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  position: relative;
+  top: 4px;
 }
 .popular-post-block:hover .popular-post-title{
   bottom: 0%;
