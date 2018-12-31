@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="vicon.ico">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ViTaLiTieS</title>
 </head>
@@ -39,8 +40,10 @@
       <a class="head-link instagram" href="https://instagram.com/vitalitiesm"><h3>Instagram</h3> </a>
     </div>
   </div>
-  <div class="white-rolling-cover"><div class="white-rolling"></div></div>
-  <div class="black-rolling-cover"><div class="black-rolling"></div></div>
+  <div class="empty">
+    <div class="white-rolling-cover"><div class="white-rolling"></div></div>
+    <div class="black-rolling-cover"><div class="black-rolling"></div></div>
+  </div>
 </body>
 <script src="jquery-3.3.1.min.js" charset="utf-8"></script>
 <script type="text/javascript">
@@ -63,13 +66,27 @@
   $('.black-rolling, .white-rolling').css('left', halfwidth);
   // $('.black-rolling, .white-rolling').animate({'height': wheight, 'width': wwidth}, 1000)
   var goToURL = function(url) {
-    $('.black-rolling, .white-rolling').css('transform','scale(25)');
-    $('.black-rolling-cover, .white-rolling-cover').css('z-index','999');
-    $('.item:hover').css('box-shadow','none');
-    $('.item').css({
-      'border-radius':'0'
-    })
-    setTimeout(function () {window.location = url}, 600);
+    var top = $('body, html').scrollTop();
+    if (top > '0') {
+      $('html, body').stop().animate({scrollTop:0}, 250, 'swing')
+      setTimeout(function () {
+        $('.black-rolling, .white-rolling').css('transform','scale(25)');
+        $('.black-rolling-cover, .white-rolling-cover').css('z-index','999');
+        $('.item:hover').css('box-shadow','none');
+        $('.item').css({
+          'border-radius':'0'
+        })
+        setTimeout(function () {window.location = url}, 600);
+      }, 250);
+    } else {
+      $('.black-rolling, .white-rolling').css('transform','scale(25)');
+      $('.black-rolling-cover, .white-rolling-cover').css('z-index','999');
+      $('.item:hover').css('box-shadow','none');
+      $('.item').css({
+        'border-radius':'0'
+      })
+      setTimeout(function () {window.location = url}, 600);
+    }
   }
 </script>
 </html>
