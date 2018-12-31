@@ -1,0 +1,48 @@
+.white-rolling-cover, .black-rolling-cover{
+  position: fixed;
+  z-index: 999;
+}
+.loader-item{
+  display: inline-block;
+  height: auto;
+  width: 300px;
+  margin: 30px 0px;
+  background: #1c1c1c;
+  overflow: hidden;
+  transition: 0.2s;
+  z-index: 10000;
+  position: fixed;
+  outline: none;
+  top: 224px;
+  font-family: arial, tahoma;
+  color: #f9f9f9;
+  text-align: center;
+  opacity: 0;
+}
+.loader-title{
+  padding: 20px;
+}
+.loader-image{
+  background: #f9f9f9;
+}
+.loader-title h3{
+  font-size: 20px;
+}
+.white-rolling-cover{
+  overflow: hidden;
+  height: 500px;
+  width: 100%;
+  top: -143px;
+  background: #f9f9f9;
+  /* opacity: 0.3; */
+}
+.black-rolling-cover{
+  overflow: hidden;
+  min-height: 300px;
+  max-height: 700px;
+  height: 1200px;
+  width: 100%;
+  top: 357px;
+  background: #1c1c1c;
+  /* opacity: 0.7; */
+}

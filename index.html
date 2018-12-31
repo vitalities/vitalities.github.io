@@ -18,7 +18,7 @@
   <div class="content-header">
     <h2>Portfolio</h2>
   </div>
-  <a href="whyten/index.html">
+  <a href="javascript:goToURL('whyten/index-load.html')">
     <div class="item">
         <div class="image">
           <img src="whyten-logo.png" alt="Whyten">
@@ -39,6 +39,8 @@
       <a class="head-link instagram" href="https://instagram.com/vitalitiesm"><h3>Instagram</h3> </a>
     </div>
   </div>
+  <div class="white-rolling-cover"><div class="white-rolling"></div></div>
+  <div class="black-rolling-cover"><div class="black-rolling"></div></div>
 </body>
 <script src="jquery-3.3.1.min.js" charset="utf-8"></script>
 <script type="text/javascript">
@@ -55,5 +57,19 @@
       'border-bottom': '2px solid rgba(248, 248, 248,255)'
     })
   })
+  var wwidth = $(window).width();
+  var wheight = $(window).height();
+  var halfwidth = wwidth / 2 - 50;
+  $('.black-rolling, .white-rolling').css('left', halfwidth);
+  // $('.black-rolling, .white-rolling').animate({'height': wheight, 'width': wwidth}, 1000)
+  var goToURL = function(url) {
+    $('.black-rolling, .white-rolling').css('transform','scale(25)');
+    $('.black-rolling-cover, .white-rolling-cover').css('z-index','999');
+    $('.item:hover').css('box-shadow','none');
+    $('.item').css({
+      'border-radius':'0'
+    })
+    setTimeout(function () {window.location = url}, 600);
+  }
 </script>
 </html>
