@@ -225,3 +225,6 @@ a:focus{
     margin-bottom: 20px;
   }
 }
+.logger, .logger img{
+  position: absolute;
+}
