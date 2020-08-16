@@ -241,7 +241,12 @@ a:focus{
   transition-delay: .1s;
 }
 .portfolio a{
-  margin: 30px;
+  display: inline-grid;
+  margin: 24px 10px;
+}
+.contacts a{
+  display: inline-grid;
+  margin: 30px 10px;
 }
 #page-container {
   position: relative;
@@ -323,9 +328,6 @@ a:focus{
 .contacts-item:hover{
   transform: translateY(-40px);
 }
-.contacts a{
-  margin: 20px;
-}
 .contacts-item:hover .contacts-item-logo{
   transform: translateY(0);
   transition: .5s;
@@ -345,6 +347,27 @@ a:focus{
   padding-top: 40px;
 }
 
+.gray-contacts, .gray-contacts .contacts-item-bottomline div{
+  background: #2c2c2c;
+}
+.gray-contacts .contacts-item-description p{
+  color: #2c2c2c;
+}
+.green-contacts, .green-contacts .contacts-item-bottomline div{
+  background: #81B441;
+}
+.green-contacts .contacts-item-description p{
+  color: #62991d;
+}
+.pink-contacts, .pink-contacts .contacts-item-bottomline div{
+  background: #E8486A;
+}
+.pink-contacts .contacts-item-description p{
+  color: #E8486A;
+}
+
+
+
 @media screen and (max-width: 1300px){
   .content-block:hover .title-header{
     left: 44%;
@@ -354,8 +377,59 @@ a:focus{
     left: 40%;
   }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 480px){
+  .portfolio-item h2{
+    opacity: 1;
+  }
+  .content-block:hover .title-block{
+    margin-left: 0px;
+    opacity: 1;
+  }
+  .content-block:hover .title-header h1{
+    color: #7ab8e7;
+    transition: .5s;
+  }
   .content-block:hover .title-header{
-    left: 30%;
+    left: 45px;
+  }
+  .contacts:hover .title-header{
+    left: 65px;
+  }
+  .portfolio-item{
+    transition: .4s;
+    transform: translateY(-10%);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  .portfolio-item-topline{
+    transition: .4s;
+    width: 100%;
+    transition-delay: .2s;
+  }
+  .portfolio-item img{
+    transition: .4s;
+    height: 60px;
+    transition-delay: .1s;
+  }
+  .contacts-item-description{
+    transition: .4s;
+    transform: translateY(0);
+  }
+  .portfolio-item-description{
+    transition: .4s;
+    transform: translateY(0);
+  }
+  .contacts-item{
+    transform: translateY(-40px);
+  }
+  .contacts-item-logo{
+    transform: translateY(0);
+    transition: .5s;
+    transition-delay: .1s;
+  }
+  .portfolio-item-logo{
+    transform: translateY(0);
+    transition: .5s;
+    transition-delay: .1s;
   }
 }
