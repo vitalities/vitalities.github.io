@@ -23,6 +23,15 @@ $( document ).ready(function() {
         thisDiv.find('img').css('right', imblockd);
         thisDiv.find('img').css('bottom', imblockh);
       }, 900);
+      setTimeout(function () {
+        var portfolioImgWidth = thisDiv.find('img').width();
+        var imblockd = portfolioImgWidth - portfolioBlockWidth;
+        imblockd /= 2;
+        var imblockh = portfolioBlockHeight - portfolioImgHeight;
+        imblockh /= 1.345;
+        thisDiv.find('img').css('right', imblockd);
+        thisDiv.find('img').css('bottom', imblockh);
+      }, 3000);
     }else {
       var thisDiv = $(this);
       $(this).find('img').width(portfolioBlockWidth);
@@ -33,6 +42,12 @@ $( document ).ready(function() {
         imblockh /= 1.05;
         thisDiv.find('img').css('bottom', imblockh);
       }, 900);
+      setTimeout(function () {
+        var portfolioImgWidth = thisDiv.find('img').width();
+        var imblockh = portfolioBlockHeight - portfolioImgHeight;
+        imblockh /= 1.05;
+        thisDiv.find('img').css('bottom', imblockh);
+      }, 3000);
     }
 
   });
