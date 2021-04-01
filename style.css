@@ -460,6 +460,15 @@ a:focus{
 .pink-contacts .contacts-item-description p{
   color: #E8486A;
 }
+.white-contacts, .white-contacts .contacts-item-bottomline div{
+  background: #fff;
+}
+.white-contacts .contacts-item-description{
+  background: #2c2c2c;
+}
+.white-contacts .contacts-item-description p{
+  color: #fff;
+}
 .blue-contacts, .blue-contacts .contacts-item-bottomline div{
   background: #0077B5;
 }
