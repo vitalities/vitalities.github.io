@@ -10,8 +10,33 @@ body, html{
   height: 100%;
   font: 'Lato', arial, tahoma;
   font-family: 'Lato', arial, tahoma;
-  background: #272727;
 }
+
+body {
+    background: linear-gradient(90deg, #0d2932, #272727, #0e2932);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 42s ease infinite;
+    -moz-animation: AnimationName 42s ease infinite;
+    animation: AnimationName 42s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 h1, h2, h3, p{
   color: #f9f9f9;
   margin: 0;
@@ -43,7 +68,8 @@ header{
 }
 
 .b1{
-  background: #2f4b9c;
+  /* background: #2f4b9c; */
+  background: rgb(54,177,219);
   grid-column: 1;
 }
 .b2{
@@ -102,7 +128,8 @@ a:focus{
   margin-bottom: 50px;
   padding: 50px 0;
   opacity: 1;
-  border-bottom: 5px solid #7ab8e7;
+  /* border-bottom: 5px solid #7ab8e7; */
+  border-bottom: 5px solid rgb(54,177,219);
 }
 
 /* Portfolio */
@@ -293,7 +320,7 @@ a:focus{
   text-align: center;
 }
 .title-header h1{
-  color: #7ab8e7;
+  color: rgb(54,177,219);
   font-family: "Rage";
   font-weight: normal;
   font-size: 48px;
@@ -343,7 +370,7 @@ a:focus{
   bottom: 0;
   width: 100%;
   height: 100px;
-  background: #2c2c2c;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .contacts-item{
@@ -490,7 +517,7 @@ a:focus{
 
 .email{
   border-radius: 10px;
-  background: #2c2c2c;
+  background: rgba(0, 0, 0, 0.1);
   padding: 8px 8px 5px 8px;
   float: right;
   margin-right: 50px;
@@ -498,7 +525,7 @@ a:focus{
   transition-duration: 0.3s;
 }
 .email:hover{
-  background: #3c3c3c;
+  background: rgba(255, 255, 255, 0.1);;
   transform: scale(1.1);
 }
 
@@ -508,7 +535,7 @@ a:focus{
 .category-block{
   display: inline-block;
   padding: 10px 20px;
-  background: #3c3c3c;
+  background: rgba(255, 255, 255, 0.1);
   margin: 5px;
   border-bottom: 4px solid #3c3c3c;
   border-color: rgba(0, 0, 0, 0);
@@ -517,7 +544,7 @@ a:focus{
 }
 
 .category-block:hover{
-  background: #353535;
+  background: rgba(0, 0, 0, 0.15);
   transition-delay: 0s;
   transition-duration: .4s;
   margin: 5px 20px;
