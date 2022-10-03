@@ -42,7 +42,7 @@ function openPost(post) {
 
 // Post content
 
-  let postContent = '<div class="post-content"><div id="post"><div class="post-top"><div class="post-title">'+post.title+'</div><a class="post-close"><i class="fa-solid fa-xmark"></i></a></div><div class="post-center"><video src="'+post.video+'" loop controls autoplay></video></div><div class="post-bottom"><div class="post-date">'+post.date+'</div><div class="post-description">'+post.description+'</div>'+tags+'</div></div>'
+  let postContent = '<div class="post-content"><div id="post"><div class="post-top"><div class="post-title">'+post.title+'</div><a class="post-close"><i class="fa-solid fa-xmark"></i></a></div><div class="post-center"><video src="'+post.video+'" loop controls autoplay playsinline></video></div><div class="post-bottom"><div class="post-date">'+post.date+'</div><div class="post-description">'+post.description+'</div>'+tags+'</div></div>'
 
   $('.cover').append(postContent);
   $('.cover').fadeIn(300);
@@ -90,7 +90,7 @@ function showPosts(category) {
   for (let x in portfolio.posts) {
     if (portfolio.posts[x].category == category) {
       let id = portfolio.posts[x].category+portfolio.posts[x].id;
-      let post = '<a class="portfolio-block" id="'+id+'"><video src="'+portfolio.posts[x].video+'" loop muted></video></a>';
+      let post = '<a class="portfolio-block" id="'+id+'"><video src="'+portfolio.posts[x].video+'" loop muted playsinline></video></a>';
       let nameId = '#'+id;
 
       $('.portfolio-grid').append(post);
