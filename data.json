@@ -1,0 +1,141 @@
+{
+  "posts": [
+
+    {
+      "id": 15,
+      "title": "Elite",
+      "description": "Intro animation of logo.",
+      "date": "31.08.2022",
+      "video": "./assets/posts/data/elite-logo-anim.mp4",
+      "tags": ["after effects", "2d", "logo animation"],
+      "category": "2D"
+    },
+    {
+      "id": 14,
+      "title": "Rovantsi Church",
+      "description": "Intro animation of logo.",
+      "date": "10.02.2022",
+      "video": "./assets/posts/data/rovantsi-church-logo.mp4",
+      "tags": ["after effects", "2d", "logo animation"],
+      "category": "2D"
+    },
+    {
+      "id": 13,
+      "title": "Vorobey film",
+      "description": "Intro animation of logo.",
+      "date": "09.02.2022",
+      "video": "./assets/posts/data/vorobey-film-logo.mp4",
+      "tags": ["after effects", "2d", "logo animation"],
+      "category": "2D"
+    },
+    {
+      "id": 12,
+      "title": "Timmy",
+      "description": "Intro animation of logo.",
+      "date": "25.11.2021",
+      "video": "./assets/posts/data/timmy-logo.mp4",
+      "tags": ["after effects", "2d", "logo animation"],
+      "category": "2D"
+    },
+    {
+      "id": 11,
+      "title": "NYC",
+      "description": "Intro animation of logo.",
+      "date": "25.11.2021",
+      "video": "./assets/posts/data/logo1.mp4",
+      "tags": ["after effects", "2d", "logo animation"],
+      "category": "2D"
+    },
+    {
+      "id": 10,
+      "title": "Polish gel 3",
+      "description": "Product animation of nail polish gel.",
+      "date": "12.09.2022",
+      "video": "./assets/posts/data/polishgel3.mp4",
+      "tags": ["blender", "3d", "product animation"],
+      "category": "3D"
+    },
+    {
+      "id": 9,
+      "title": "Polish gel 2",
+      "description": "Product animation of nail polish gel.",
+      "date": "23.08.2022",
+      "video": "./assets/posts/data/polishgel2.mp4",
+      "tags": ["blender", "3d", "product animation"],
+      "category": "3D"
+    },
+    {
+      "id": 8,
+      "title": "Retrowave",
+      "description": "Abstract animation in retrowave style.",
+      "date": "22.08.2022",
+      "video": "./assets/posts/data/neonwaves.mp4",
+      "tags": ["blender", "3d", "abstract"],
+      "category": "3D"
+    },
+    {
+      "id": 7,
+      "title": "Polish gel",
+      "description": "Product animation of nail polish gel.",
+      "date": "16.07.2022",
+      "video": "./assets/posts/data/polishgel.mp4",
+      "tags": ["blender", "3d", "product animation"],
+      "category": "3D"
+    },
+    {
+      "id": 6,
+      "title": "Box of sushi",
+      "description": "Product animation of sushi delivery.",
+      "date": "25.06.2022",
+      "video": "./assets/posts/data/sushiwithbox.mp4",
+      "tags": ["blender", "3d", "product animation", "food"],
+      "category": "3D"
+    },
+    {
+      "id": 5,
+      "title": "Levitating sushi",
+      "description": "Sushi",
+      "date": "25.06.2022",
+      "video": "./assets/posts/data/sushiair.mp4",
+      "tags": ["blender", "3d", "product animation", "food"],
+      "category": "3D"
+    },
+    {
+      "id": 4,
+      "title": "Dark forest",
+      "description": "A walk through dark forest.",
+      "date": "28.05.2022",
+      "video": "./assets/posts/data/darkforest.mp4",
+      "tags": ["blender", "3d", "realistic", "atmospheric"],
+      "category": "3D"
+    },
+    {
+      "id": 3,
+      "title": "Magma cubes",
+      "description": "Another animation of cubes",
+      "date": "09.04.2022",
+      "video": "./assets/posts/data/magmacubes.mp4",
+      "tags": ["blender", "3d", "abstract"],
+      "category": "3D"
+    },
+    {
+      "id": 2,
+      "title": "Lamps",
+      "description": "Життя переможе смерть",
+      "date": "27.03.2022",
+      "video": "./assets/posts/data/lamps.mp4",
+      "tags": ["blender", "3d", "abstract", "Ukraine"],
+      "category": "3D"
+    },
+    {
+      "id": 1,
+      "title": "Cubes",
+      "description": "Cubes - first animation",
+      "date": "18.03.2022",
+      "video": "./assets/posts/data/firstcubes.mp4",
+      "tags": ["blender", "3d", "abstract"],
+      "category": "3D"
+    }
+
+  ]
+}
