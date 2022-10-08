@@ -2,6 +2,15 @@
   "posts": [
 
     {
+      "id": 16,
+      "title": "ZOI - logo reveal",
+      "description": "Intro animation of logo.",
+      "date": "05.10.2022 - 08.10.2022",
+      "video": "./assets/posts/data/zoi-logo.mp4",
+      "tags": ["after effects", "2d", "logo animation"],
+      "category": "2D"
+    },
+    {
       "id": 15,
       "title": "Elite",
       "description": "Intro animation of logo.",
