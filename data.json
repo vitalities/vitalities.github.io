@@ -1,6 +1,7 @@
 {
   "posts": [
 
+
     {
       "id": 16,
       "title": "ZOI - logo reveal",
@@ -8,7 +9,8 @@
       "date": "05.10.2022 - 08.10.2022",
       "video": "./assets/posts/data/zoi-logo.mp4",
       "tags": ["after effects", "2d", "logo animation"],
-      "category": "2D"
+      "category": "2D",
+      "size": "horizontal"
     },
     {
       "id": 15,
@@ -17,7 +19,8 @@
       "date": "31.08.2022",
       "video": "./assets/posts/data/elite-logo-anim.mp4",
       "tags": ["after effects", "2d", "logo animation"],
-      "category": "2D"
+      "category": "2D",
+      "size": "horizontal"
     },
     {
       "id": 14,
@@ -26,7 +29,8 @@
       "date": "10.02.2022",
       "video": "./assets/posts/data/rovantsi-church-logo.mp4",
       "tags": ["after effects", "2d", "logo animation"],
-      "category": "2D"
+      "category": "2D",
+      "size": "horizontal"
     },
     {
       "id": 13,
@@ -35,7 +39,8 @@
       "date": "09.02.2022",
       "video": "./assets/posts/data/vorobey-film-logo.mp4",
       "tags": ["after effects", "2d", "logo animation"],
-      "category": "2D"
+      "category": "2D",
+      "size": "horizontal"
     },
     {
       "id": 12,
@@ -44,7 +49,8 @@
       "date": "25.11.2021",
       "video": "./assets/posts/data/timmy-logo.mp4",
       "tags": ["after effects", "2d", "logo animation"],
-      "category": "2D"
+      "category": "2D",
+      "size": "horizontal"
     },
     {
       "id": 11,
@@ -53,7 +59,21 @@
       "date": "25.11.2021",
       "video": "./assets/posts/data/logo1.mp4",
       "tags": ["after effects", "2d", "logo animation"],
-      "category": "2D"
+      "category": "2D",
+      "size": "horizontal"
+    },
+
+
+
+    {
+      "id": 17,
+      "title": "Car on bridge - 3D animation",
+      "description": "Realistic style animation of car.",
+      "date": "31.10.2022",
+      "video": "./assets/posts/data/caronbridge.mp4",
+      "tags": ["blender", "3d", "realistic animation"],
+      "category": "3D",
+      "size": "vertical"
     },
     {
       "id": 10,
@@ -62,7 +82,8 @@
       "date": "12.09.2022",
       "video": "./assets/posts/data/polishgel3.mp4",
       "tags": ["blender", "3d", "product animation"],
-      "category": "3D"
+      "category": "3D",
+      "size": "horizontal"
     },
     {
       "id": 9,
@@ -71,7 +92,8 @@
       "date": "23.08.2022",
       "video": "./assets/posts/data/polishgel2.mp4",
       "tags": ["blender", "3d", "product animation"],
-      "category": "3D"
+      "category": "3D",
+      "size": "horizontal"
     },
     {
       "id": 8,
@@ -80,7 +102,8 @@
       "date": "22.08.2022",
       "video": "./assets/posts/data/neonwaves.mp4",
       "tags": ["blender", "3d", "abstract"],
-      "category": "3D"
+      "category": "3D",
+      "size": "horizontal"
     },
     {
       "id": 7,
@@ -89,7 +112,8 @@
       "date": "16.07.2022",
       "video": "./assets/posts/data/polishgel.mp4",
       "tags": ["blender", "3d", "product animation"],
-      "category": "3D"
+      "category": "3D",
+      "size": "horizontal"
     },
     {
       "id": 6,
@@ -98,7 +122,8 @@
       "date": "25.06.2022",
       "video": "./assets/posts/data/sushiwithbox.mp4",
       "tags": ["blender", "3d", "product animation", "food"],
-      "category": "3D"
+      "category": "3D",
+      "size": "horizontal"
     },
     {
       "id": 5,
@@ -107,7 +132,8 @@
       "date": "25.06.2022",
       "video": "./assets/posts/data/sushiair.mp4",
       "tags": ["blender", "3d", "product animation", "food"],
-      "category": "3D"
+      "category": "3D",
+      "size": "horizontal"
     },
     {
       "id": 4,
@@ -116,7 +142,8 @@
       "date": "28.05.2022",
       "video": "./assets/posts/data/darkforest.mp4",
       "tags": ["blender", "3d", "realistic", "atmospheric"],
-      "category": "3D"
+      "category": "3D",
+      "size": "horizontal"
     },
     {
       "id": 3,
@@ -125,7 +152,8 @@
       "date": "09.04.2022",
       "video": "./assets/posts/data/magmacubes.mp4",
       "tags": ["blender", "3d", "abstract"],
-      "category": "3D"
+      "category": "3D",
+      "size": "horizontal"
     },
     {
       "id": 2,
@@ -134,7 +162,8 @@
       "date": "27.03.2022",
       "video": "./assets/posts/data/lamps.mp4",
       "tags": ["blender", "3d", "abstract", "Ukraine"],
-      "category": "3D"
+      "category": "3D",
+      "size": "horizontal"
     },
     {
       "id": 1,
@@ -143,7 +172,8 @@
       "date": "18.03.2022",
       "video": "./assets/posts/data/firstcubes.mp4",
       "tags": ["blender", "3d", "abstract"],
-      "category": "3D"
+      "category": "3D",
+      "size": "horizontal"
     }
 
   ]

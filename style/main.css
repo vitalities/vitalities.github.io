@@ -273,6 +273,7 @@ footer{
 	width: 100%;
   font-size: 14px;
 	text-align: center;
+	margin-top: 30px;
 }
 footer p{
 	padding: 0 20px 0 0;
@@ -401,16 +402,21 @@ body{
 
 .portfolio-grid{
 	margin-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 }
 
 .portfolio-block{
-	width: 382px;
-	height: 214px;
 	background-color: rgba(19, 37, 48, 0.5);
-	display: inline-grid;
   margin: 12px 10px;
 	transition-duration: .5s;
 	box-shadow: 0px 0px 0 rgba(16, 33, 43, 0.1);
+	overflow: hidden;
+}
+
+.portfolio-block.vertical{
+	max-height: 25vw;
+	grid-row: span 2;
 }
 
 .portfolio-block:hover{
@@ -443,6 +449,7 @@ body{
 
 .post-center video{
 	width: 100%;
+	max-height: 30vw;
 }
 
 .post-top{
@@ -534,6 +541,15 @@ body{
 	.hero-over{
 		height: 43vw;
 	}
+
+	.portfolio-block.vertical{
+		max-height: 38vw;
+	}
+	.portfolio-grid{
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+
 }
 
 
@@ -541,6 +557,10 @@ body{
 /* Phone */
 
 @media only screen and (max-width: 800px) {
+	.post-center video{
+		width: 100%;
+		max-height: 60vw;
+	}
 	.about-block{
 		display: block;
 	}
@@ -596,6 +616,18 @@ body{
 
 	.tag{
 		margin-bottom: 10px;
+	}
+
+
+	.portfolio-block.vertical{
+		max-height: none;
+	}
+	.portfolio-block{
+		display: inline-grid;
+	}
+	.portfolio-grid{
+		grid-template-columns: repeat(1, 1fr);
+		display: block;
 	}
 
 
