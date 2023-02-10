@@ -64,7 +64,16 @@
     },
 
 
-
+    {
+      "id": 18,
+      "title": "Polish gel 4",
+      "description": "Product animation of nail polish gel.",
+      "date": "09.02.2022",
+      "video": "./assets/posts/data/polishgel4.mp4",
+      "tags": ["blender", "3d", "product animation"],
+      "category": "3D",
+      "size": "horizontal"
+    },
     {
       "id": 17,
       "title": "Car on bridge - 3D animation",

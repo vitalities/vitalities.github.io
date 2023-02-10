@@ -264,6 +264,25 @@ a.nav-selected{
 }
 
 
+/* WORK PROFILES */
+
+a.work-profile{
+	display: inline-flex;
+	width: 333.5px;
+	padding: 15px;
+	margin: 5px 0;
+	background-color: #fff;
+	transition-duration: 0.2s;
+}
+
+.work-profile img{
+	max-height: 25px;
+	margin: auto;
+}
+
+a.work-profile:hover{
+	background-color: #f1f1f1;
+}
 
 /* FOOTER */
 
