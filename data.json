@@ -75,6 +75,16 @@
 
 
     {
+      "id": 21,
+      "title": "Ukraine alive",
+      "description": "Abstract animation of wheat field.",
+      "date": "24.02.2023",
+      "video": "./assets/posts/data/ukrainealive.mp4",
+      "tags": ["blender", "3d", "abstract animation", "nature"],
+      "category": "3D",
+      "size": "horizontal"
+    },
+    {
       "id": 19,
       "title": "World map animation",
       "description": "Abstract animation of world map.",
