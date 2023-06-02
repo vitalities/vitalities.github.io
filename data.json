@@ -3,6 +3,38 @@
 
 
     {
+      "id": 24,
+      "title": "Citroen - short clip",
+      "description": "Short video clip of the car.",
+      "date": "26.05.2023",
+      "video": "./assets/posts/data/CITROEN-26-05-23.mp4",
+      "tags": ["davinci resolve", "clip", "car", "Citroen"],
+      "category": "Clips",
+      "size": "film"
+    },
+    {
+      "id": 23,
+      "title": "Skoda - short clip",
+      "description": "Short video clip of the car.",
+      "date": "12.05.2023",
+      "video": "./assets/posts/data/SKODA-12-05-23.mp4",
+      "tags": ["davinci resolve", "clip", "car", "Skoda"],
+      "category": "Clips",
+      "size": "horizontal"
+    },
+    {
+      "id": 22,
+      "title": "BMW X5 - short clip",
+      "description": "Short video clip of the car.",
+      "date": "10.05.2023",
+      "video": "./assets/posts/data/BMWX5-10-05-23.mp4",
+      "tags": ["davinci resolve", "clip", "car", "BMW"],
+      "category": "Clips",
+      "size": "horizontal"
+    },
+
+
+    {
       "id": 20,
       "title": "Jason Morrell - logo reveal",
       "description": "Intro animation of logo.",

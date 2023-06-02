@@ -438,6 +438,15 @@ body{
 	grid-row: span 2;
 }
 
+.portfolio-block.film{
+	overflow: hidden;
+}
+
+.portfolio-block.film video{
+	width: 132%;
+	margin-left: -20%;
+}
+
 .portfolio-block:hover{
 	cursor: pointer;
 }
@@ -647,6 +656,18 @@ body{
 	.portfolio-grid{
 		grid-template-columns: repeat(1, 1fr);
 		display: block;
+	}
+
+	.category-button{
+		display: block;
+		padding: 20px 50px;
+		margin: 10px 20px;
+	}
+
+	.category-button-selected{
+		display: block;
+		padding: 20px 50px;
+		margin: 10px 20px;
 	}
 
 
