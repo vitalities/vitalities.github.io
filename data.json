@@ -105,7 +105,16 @@
       "size": "horizontal"
     },
 
-
+    {
+      "id": 25,
+      "title": "Car on street",
+      "description": "Realistic style loop animation of car.",
+      "date": "17.07.2023",
+      "video": "./assets/posts/data/bmw-17-07.mp4",
+      "tags": ["blender", "3d", "realistic animation", "nature", "car"],
+      "category": "3D",
+      "size": "horizontal"
+    },
     {
       "id": 21,
       "title": "Ukraine alive",
