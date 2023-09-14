@@ -106,6 +106,16 @@
     },
 
     {
+      "id": 26,
+      "title": "Animation of map with boat",
+      "description": "Animation of transition to the map from the boat with SFX. Full video watch <a href='https://www.instagram.com/p/CxC3VP_o2jm/'>here.</a>",
+      "date": "09.08.2023",
+      "video": "./assets/posts/data/mp-map.mp4",
+      "tags": ["blender", "3d", "nature", "map", "boat", "transition"],
+      "category": "3D",
+      "size": "vertical"
+    },
+    {
       "id": 25,
       "title": "Car on street",
       "description": "Realistic style loop animation of car.",
