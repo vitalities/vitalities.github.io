@@ -8,4 +8,4 @@
 
 
 // Copyright
-$('#copyright').text(new Date().getFullYear()+'. Designed by Vitaliy Mokiychuk')
+$('#copyright').text(new Date().getFullYear()+'. Designed by Vitalii Mokiichuk')
