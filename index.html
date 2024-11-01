@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/main.css">
+  <script src="https://kit.fontawesome.com/5876a66141.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans+Caption:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -31,24 +32,26 @@
     </table>
     <div id="nav">
       <a href="/" class="nav-selected">Home</a>
-      <!-- <a href="photo.html">Photo</a> -->
+      <a href="photo.html">Photo</a>
       <a href="video.html">Video</a>
-      <!-- <a href="motiondesign.html">Motion Design</a> -->
+      <a href="motiondesign.html">Motion Design</a>
       <a href="#about">About</a>
-      <a href="#footer">Contacts</a>
+      <a href="contacts.html">Contacts</a>
     </div>
     <div id="hero">
       <div class="hero-video">
-        <video src="./assets/main/hero-video.mp4" muted loop autoplay poster="./assets/main/hero-thumbnail.jpg" playsinline></video>
+        <video id="hero-video-video" src="./assets/main/hero-video.mp4" muted loop autoplay poster="./assets/main/hero-thumbnail.jpg" playsinline></video>
+        <video id="hero-video-photo" src="./assets/main/hero-photo.mp4" muted loop autoplay poster="./assets/main/hero-thumbnail.jpg" playsinline></video>
+        <video id="hero-video-motiondesign" src="./assets/main/hero-motiondesign.mp4" muted loop autoplay poster="./assets/main/hero-thumbnail.jpg" playsinline></video>
       </div>
       <div class="hero-over">
         <div>
           <div class="hero-title">
             <p>Choose a category</p>
           </div>
-          <a href="" class="hero-button disabled">Photo(soon)</a>
-          <a href="video.html" class="hero-button">Video</a>
-          <a href="" class="hero-button disabled">Motion Design(soon)</a>
+          <a href="photo.html" id="photo-button" class="hero-button">Photo</a>
+          <a href="video.html" id="video-button" class="hero-button">Video</a>
+          <a href="motiondesign.html" id="motiondesign-button" class="hero-button">Motion Design</a>
         </div>
       </div>
     </div>

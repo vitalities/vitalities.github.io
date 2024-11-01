@@ -16,20 +16,31 @@ fetch('../video.json').then(response => {
   });
 
   categories.forEach((category) => {
-    $('.portfolio-category').append('<div class="category-block" id="'+category+'"><p class="section-title">'+category+'</p><div class="portfolio-grid"></div></div>')
+    let categoryCode = category.replace(/\s/g, '');
+
+    const categoryPostCount = portfolio.posts.filter(item => item.category === category).length;
+  
+    if (categoryPostCount >= 4 || $(window).width() <= 1100) {
+      $('.portfolio-category').append('<div class="category-block" id="'+categoryCode+'"><p class="section-title">'+category+'</p><div class="portfolio-grid"></div><div class="showVideoSwitch"><i class="fa-solid fa-chevron-down"></i></div></div>')  
+    } else {
+      $('.portfolio-category').append('<div class="category-block" id="'+categoryCode+'"><p class="section-title">'+category+'</p><div class="portfolio-grid"></div></div>')  
+    }
+    
 
     for (let x in portfolio.posts) {
-      console.log(x);
       if (portfolio.posts[x].category == category) {
         let id = portfolio.posts[x].category+portfolio.posts[x].id;
-
-
-        let post = '<iframe id="'+id+'" class="video-portfolio-block" src="'+portfolio.posts[x].url+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-        $('#'+category+' .portfolio-grid').append(post);
+        let post = '<iframe id="'+id+'" class="video-portfolio-block" src="'+portfolio.posts[x].url+'" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+        $('#'+categoryCode+' .portfolio-grid').append(post);
 
       }
     }
 
+  });
+
+  $('.showVideoSwitch').on('click', function () {
+    $(this).siblings('.portfolio-grid').toggleClass('expanded');
+    $(this).children().toggleClass('rotated');
   });
 
 }).catch(err => {
