@@ -1,6 +1,15 @@
 {
   "posts": [
 
+   {
+      "src": "./assets/photo/29.jpg"
+    },
+   {
+      "src": "./assets/photo/28.jpg"
+    },
+    {
+      "src": "./assets/photo/27.jpg"
+    },
     {
       "src": "./assets/photo/26.jpg"
     },
